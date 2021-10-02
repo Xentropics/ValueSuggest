@@ -82,7 +82,7 @@ class NdeTermsSuggest implements SuggesterInterface
     private function graphqlExecute(string $endpoint, string $agent, string $query): array
     {
         $headers = ['Content-Type: application/json', "User-Agent: $agent"];
-        $data = @file_get_contents($endpoint, false, stream_context_create([
+        $data = file_get_contents($endpoint, false, stream_context_create([
             'http' => [
                 'method' => 'POST',
                 'header' => $headers,
