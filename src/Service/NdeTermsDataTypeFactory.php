@@ -16,6 +16,10 @@ class NdeTermsDataTypeFactory implements FactoryInterface
             'label' => 'NDE: Archeologisch Basisregister', // @translate
             'source' => 'https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/abr',
         ],
+        'valuesuggest:ndeterms:aat' => [
+            'label' => 'NDE: Art & Architecture Thesaurus', // @translate
+            'source' => 'http://vocab.getty.edu/aat/sparql',
+        ],
         'valuesuggest:ndeterms:btt' => [
             'label' => 'NDE: Brinkman trefwoordenthesaurus', // @translate
             'source' => 'http://data.bibliotheken.nl/thes/brinkman/sparql',
