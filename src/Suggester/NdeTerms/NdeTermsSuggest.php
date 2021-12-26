@@ -52,7 +52,8 @@ class NdeTermsSuggest implements SuggesterInterface
         return "query FindTerm {
         terms(
             sources: [\"$source\"],
-            query: \"$searchphrase\")
+            query: \"$searchphrase\",
+            queryMode: OPTIMIZED)
         {
             source {
                 name
